@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "email-server": {
+      "command": "python",
+      "args": [
+        "e:\\code\\Timesheet-System\\mcp-server\\email_server.py"
+      ],
+      "cwd": "e:\\code\\Timesheet-System\\mcp-server",
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "disabled": false,
+      "autoApprove": [],
+      "timeout": 30
+    }
+  }
+}

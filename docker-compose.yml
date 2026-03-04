@@ -1,0 +1,44 @@
+# Docker Compose for Timesheet System
+
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: timesheet-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: A59eOBTpvVEo
+      MYSQL_DATABASE: timesheet
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  redis:
+    image: redis:7.0
+    container_name: timesheet-redis
+    ports:
+      - "6379:6379"
+
+  backend:
+    build: ./backend
+    container_name: timesheet-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+      - redis
+    environment:
+      - DB_HOST=mysql
+      - REDIS_HOST=redis
+
+  frontend:
+    build: ./frontend
+    container_name: timesheet-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  mysql-data:
