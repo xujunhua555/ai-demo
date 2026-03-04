@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/timesheet?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: A59eOBTpvVEo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: admin
+      password: admin
+  ai:
+    openai:
+      api-key: sk-0707af21936c4a609d9cb89c24d2e809
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat
+          temperature: 0.7
+    mcp:
+      client:
+        enabled: true
+        type: SYNC
+        servers:
+          email-server:
+            command: python
+            args: 
+              - e:/code/Timesheet-System/mcp-server/email_server.py
+            working-dir: e:/code/Timesheet-System/mcp-server
+            request-timeout: 30s
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.timesheet.entity
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+jwt:
+  secret: timesheet_secret_key_2026_this_is_a_very_secure_key_for_jwt_tokens
+  expiration: 86400000
+
+email:
+  server:
+    base-url: http://localhost:8000
+    api-key: weekly-report-api-key-2026
