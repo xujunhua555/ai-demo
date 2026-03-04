@@ -1,0 +1,22 @@
+{
+  "weekly_time": "周报时间",
+  "requirement_name": "需求名称",
+  "requirement_id": "需求编号",
+  "is_cosmic_metric": "是否 cosmic 度量需求",
+  "product_manager": "产品经理",
+  "developer": "开发人员",
+  "total_task_man_days": "需求总任务量（人天）",
+  "used_task_man_days": "已使用需求总任务量（人天）",
+  "requirement_description": "需求功能描述",
+  "execution_role": "执行角色",
+  "standard_hours": "标准工时（小时）",
+  "actual_hours": "实际耗时（小时）",
+  "priority": "优先级",
+  "requirement_status": "需求状态",
+  "other_notes": "其他情况说明",
+  "planned_completion_date": "计划完成时间",
+  "actual_completion_date": "实际完成时间",
+  "work_content_progress": "工作内容及进展说明",
+  "launch_date": "上线时间",
+  "is_external_support": "是否外部支撑"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "01120200-3c40-4972-85db-55206b22dd8a",
+    "username": "dongxiaobo",
+    "name": "董小波",
+    "role": "leader",
+    "team_id": "1a1de168-2da3-4488-97be-b800f3296d7d"
+  },
+  {
+    "id": "148925aa-cf68-4494-b436-994b808604e7",
+    "username": "wangbingxin",
+    "name": "王冰心",
+    "role": "member",
+    "team_id": "1a1de168-2da3-4488-97be-b800f3296d7d"
+  },
+  {
+    "id": "960baf28-b9b2-442d-9c3d-a81024bf3421",
+    "username": "yanzhihao",
+    "name": "闫治浩",
+    "role": "member",
+    "team_id": "1a1de168-2da3-4488-97be-b800f3296d7d"
+  }
+]
